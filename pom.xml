@@ -3,10 +3,16 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.409</version><!-- which version of Jenkins is this plugin 
+    <version>1.613</version><!-- which version of Jenkins is this plugin
       built against? -->
 
   </parent>
+
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <groupId>com.twilio.jenkins</groupId>
   <artifactId>TwilioNotifier</artifactId>
@@ -148,9 +154,9 @@
   </build>
   <dependencies>
     <dependency>
-      <groupId>com.twilio</groupId>
-      <artifactId>sdk</artifactId>
-      <version>3.0</version>
+      <groupId>com.twilio.sdk</groupId>
+      <artifactId>twilio</artifactId>
+      <version>(7.0,7.9)</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
