@@ -33,4 +33,34 @@
    <f:entry title="Call?" field="callNotification">
      <f:checkbox name="callNotification" checked="${descriptor.callNotification}" />
    </f:entry>
+   <f:entry title="Language" field="callLanguage">
+     <select>
+       <f:option value="da-DK" selected="${descriptor.callLanguage=='da-DK'}">Danish, Denmark</f:option>
+       <f:option value="de-DE" selected="${descriptor.callLanguage=='de-DE'}">German, Germany</f:option>
+       <f:option value="en-AU" selected="${descriptor.callLanguage=='en-AU'}">English, Australia</f:option>
+       <f:option value="en-CA" selected="${descriptor.callLanguage=='en-CA'}">English, Canada</f:option>
+       <f:option value="en-GB" selected="${descriptor.callLanguage=='en-GB'}">English, UK</f:option>
+       <f:option value="en-IN" selected="${descriptor.callLanguage=='en-IN'}">English, India</f:option>
+       <f:option value="en-US" selected="${descriptor.callLanguage=='en-US'}">English, United States</f:option>
+       <f:option value="ca-ES" selected="${descriptor.callLanguage=='ca-ES'}">Catalan, Spain</f:option>
+       <f:option value="es-ES" selected="${descriptor.callLanguage=='es-ES'}">Spanish, Spain</f:option>
+       <f:option value="es-MX" selected="${descriptor.callLanguage=='es-MX'}">Spanish, Mexico</f:option>
+       <f:option value="fi-FI" selected="${descriptor.callLanguage=='fi-FI'}">Finnish, Finland</f:option>
+       <f:option value="fr-CA" selected="${descriptor.callLanguage=='fr-CA'}">French, Canada</f:option>
+       <f:option value="fr-FR" selected="${descriptor.callLanguage=='fr-FR'}">French, France</f:option>
+       <f:option value="it-IT" selected="${descriptor.callLanguage=='it-IT'}">Italian, Italy</f:option>
+       <f:option value="ja-JP" selected="${descriptor.callLanguage=='ja-JP'}">Japanese, Japan</f:option>
+       <f:option value="ko-KR" selected="${descriptor.callLanguage=='ko-KR'}">Korean, Korea</f:option>
+       <f:option value="nb-NO" selected="${descriptor.callLanguage=='nb-NO'}">Norwegian, Norway</f:option>
+       <f:option value="nl-NL" selected="${descriptor.callLanguage=='nl-NL'}">Dutch, Netherlands</f:option>
+       <f:option value="pl-PL" selected="${descriptor.callLanguage=='pl-PL'}">Polish-Poland</f:option>
+       <f:option value="pt-BR" selected="${descriptor.callLanguage=='pt-BR'}">Portuguese, Brazil</f:option>
+       <f:option value="pt-PT" selected="${descriptor.callLanguage=='pt-PT'}">Portuguese, Portugal</f:option>
+       <f:option value="ru-RU" selected="${descriptor.callLanguage=='ru-RU'}">Russian, Russia</f:option>
+       <f:option value="sv-SE" selected="${descriptor.callLanguage=='sv-SE'}">Swedish, Sweden</f:option>
+       <f:option value="zh-CN" selected="${descriptor.callLanguage=='zh-CN'}">Chinese (Mandarin)</f:option>
+       <f:option value="zh-HK" selected="${descriptor.callLanguage=='zh-HK'}">Chinese (Cantonese)</f:option>
+       <f:option value="zh-TW" selected="${descriptor.callLanguage=='zh-TW'}">Chinese (Taiwanese Mandarin)</f:option>
+     </select>
+   </f:entry>
 </j:jelly>

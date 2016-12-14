@@ -86,6 +86,8 @@ public class TwilioNotifier extends Notifier {
      */
     private final Boolean callNotification;
 
+    private final String callLanguage;
+
     private final String userList;
 
     private final String culpritMessage;
